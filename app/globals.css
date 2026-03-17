@@ -43,8 +43,8 @@
 body {
   background: var(--ds-bg);
   color: var(--ds-text);
-  font-family: var(--font-geist-sans), system-ui, -apple-system, Segoe UI,
-    Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo,
+    Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: var(--ds-text-base);
   line-height: 1.55;
   text-rendering: optimizeLegibility;

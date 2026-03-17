@@ -1,17 +1,15 @@
 import Link from "next/link";
 
-import { Container } from "./Container";
-
 const navItems = [
-  { href: "#projects", label: "Projects" },
-  { href: "#contact", label: "Contact" },
+  { href: "#projects", label: "/projects" },
+  { href: "#contact", label: "/contact" },
 ] as const;
 
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-50 border-b border-[var(--ds-border)] bg-[var(--ds-bg)]/80 backdrop-blur">
-      <Container>
-        <div className="flex h-16 items-center justify-between">
+    <div className="ds-container pt-6 sm:pt-10">
+      <header className="ds-surface sticky top-4 z-50 bg-[var(--ds-bg)]/80 backdrop-blur">
+        <div className="flex h-14 items-center justify-between px-4 sm:h-16 sm:px-6">
           <Link href="/" className="ds-link flex items-center gap-3">
             <span className="grid h-9 w-9 place-items-center rounded-[var(--ds-radius-sm)] border border-[var(--ds-border)] bg-[var(--ds-surface)] text-sm font-medium">
               Logo
@@ -33,8 +31,8 @@ export function Navbar() {
             ))}
           </nav>
         </div>
-      </Container>
-    </header>
+      </header>
+    </div>
   );
 }
 
