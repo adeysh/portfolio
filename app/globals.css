@@ -26,7 +26,7 @@
 @theme inline {
   --color-background: var(--ds-bg);
   --color-foreground: var(--ds-text);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-geist-mono);
   --font-mono: var(--font-geist-mono);
 }
 
